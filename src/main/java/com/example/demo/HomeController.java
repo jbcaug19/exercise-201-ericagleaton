@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestParam;
             return "formtemplate";
         }
         @RequestMapping("/processform")
-        public String loadFromPage(@RequestParam("login") String login, Model model){
-            model.addAttribute("loginval", login);
+        public String loadFromPage(@RequestParam("email") String login, Model model){
+            model.addAttribute("emailval",login);
             return "confirm";
-    }
+        }
     }
 
